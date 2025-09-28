@@ -1,2 +1,12 @@
-# PyTorch-Paper-Replicating
-I trained a ViT model on a small pizza, steak, and sushi dataset. Training from scratch underperformed due to limited data, so I used a pretrained ViT-Base from torchvision, froze its base layers, and updated the classifier head. This transfer learning approach improved accuracy and stabilized training.
+# Vision Transformer (ViT) Tutorial
+
+In this project, I trained a Vision Transformer (ViT) model on a small custom dataset of pizza, steak, and sushi images. Initially, I tried training the model from scratch, but due to the limited size of our dataset, the results were suboptimal. To improve performance, I switched to a pretrained ViT-Base model from torchvision.models, which was already trained on ImageNet-1k. I froze the base parameters to retain the pretrained features and replaced the classifier head to match our dataset’s three classes. This approach allowed the model to leverage learned representations from a large dataset while adapting to our specific problem.
+
+## Quick Start
+
+```bash
+pip install torch torchvision
+```
+## Feedback
+
+For feedback or questions, contact: [barkin.adiguzel@gmail.com](mailto:barkin.adiguzel@gmail.com)
